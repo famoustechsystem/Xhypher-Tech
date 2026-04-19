@@ -9,10 +9,10 @@ import Team from "./pages/Team.jsx";
 import Article from "./pages/Article";
 import ProjectsPage from "./pages/ProjectsPage";
 
-import PrivacyPolicy from "./pages/legal/PrivacyPolicy";
-import Terms from "./pages/legal/Terms";
-import Legal from "./pages/legal/Legal";
-import ContactPage from "./pages/legal/Contact";
+import PrivacyPolicy from "./pages/legal/PrivacyPolicy.jsx";
+import Terms from "./pages/legal/Terms.jsx";
+import Legal from "./pages/legal/Legal.jsx";
+import ContactPage from "./pages/legal/Contact.jsx";
 
 export default function App() {
 
