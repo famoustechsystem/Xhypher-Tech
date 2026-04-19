@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Team from "./pages/Team.jsx";
+import Team from "./pages/Team";
 import Article from "./pages/Article";
 import ProjectsPage from "./pages/ProjectsPage";
 
