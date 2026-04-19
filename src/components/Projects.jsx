@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
-import { Github, ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom"; // Import important !
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Projects({ projects, author, showAllLink = false }) {
   useEffect(() => {
@@ -13,7 +13,11 @@ export default function Projects({ projects, author, showAllLink = false }) {
       interval: 150,
       reset: false,
     });
+
     sr.reveal(".project-card");
+
+    // Cleanup to prevent memory leaks
+    return () => sr.destroy();
   }, []);
 
   return (
@@ -52,19 +56,28 @@ export default function Projects({ projects, author, showAllLink = false }) {
             </div>
 
             <div className="flex flex-wrap gap-3">
-              <a href={p.link} target="_blank" rel="noreferrer" className="text-sm px-4 py-2 rounded border border-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 transition">
+              <a 
+                href={p.link} 
+                target="_blank" 
+                rel="noreferrer" 
+                className="text-sm px-4 py-2 rounded border border-slate-400 hover:bg-slate-100 dark:hover:bg-slate-700 transition"
+              >
                 View the project
               </a>
+              {/* FIXED: Added missing </div> here */}
               <div>
-              <a href={`mailto:${author.email}`} className="text-sm px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700 transition">
-                Contact us
-              </a>
+                <a 
+                  href={`mailto:${author.email}`} 
+                  className="text-sm px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700 transition"
+                >
+                  Contact us
+                </a>
+              </div>
             </div>
           </article>
         ))}
       </div>
 
-      {/* --- LE BOUTON READ MORE --- */}
       {showAllLink && (
         <div className="mt-12 flex justify-center">
           <Link
