@@ -13,8 +13,8 @@ const teamMembers = [
     avatar: "https://o.uguu.se/eYsiKjtH.jpg",
     description: "Passionate about technological innovation and the development of digital ecosystems.",
     whatsapp: "https://wa.me/superstars",
-    youtube: "https://youtube.com/@JeanStephDev",
-    github: "https://github.com/superstar-zimtk"}
+    youtube: "https://youtube.com/",
+    github: "https://github.com/superstar-zimtk",
   },
   {
     name: "Famous Tech",
@@ -23,7 +23,7 @@ const teamMembers = [
     description: "Famous Tech is a skilled software developer and the technical lead within the Xhypher Tech Team. As the primary architect behind many of the collective's core projects, he specialize in full-stack development, server infrastructure, and complex bot automation.",
     whatsapp: "https://wa.me/233269012715", 
     youtube: "https://youtube.com/@JeanStephDev", 
-    github: "https://github.com/famoustech2026"}
+    github: "https://github.com/famoustech2026",
   },
   {
     name: "KELMATIXS",
@@ -32,7 +32,7 @@ const teamMembers = [
     description: "Passionate about technological innovation and the development of digital ecosystems.",
     whatsapp: "https://wa.me/233530303283",
     youtube: "https://youtube.com/@kelmatixs",
-    github: "https://github.com/kelvinfrimpong1144-pixel"}
+    github: "https://github.com/kelvinfrimpong1144-pixel",
   },
 {
     name: "QADEERXTECH",
@@ -51,7 +51,7 @@ const teamMembers = [
     description: "A passionate developer with extensive knowledge of all computer tools, a dedicated programmer, and a pro mentor.",
     whatsapp: "https://whatsapp.com/channel/0029VbBzXBN2kNFoxm7LiG3Q",
     youtube: "https://youtube.com/@suprem_e_lord?si=Ez4cR_5KOSPx_0Bz",
-    github: "https://github.com/Vinpink2"}
+    github: "https://github.com/Vinpink2",
   },
 {
     name: "LDT JOSHUAMAMBO",
